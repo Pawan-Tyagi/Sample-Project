@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.CMD.TestNGcmd">
+      <class name="com.cmd.TestNGcmd">
         <methods>
+          <include name="run"/>
           <include name="Browser"/>
           <include name="close"/>
-          <include name="run"/>
         </methods>
-      </class> <!-- com.CMD.TestNGcmd -->
+      </class> <!-- com.cmd.TestNGcmd -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

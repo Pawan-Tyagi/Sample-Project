@@ -31,45 +31,118 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">0</td><td class="numi">11.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">31.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr>
-<tr class="failedodd"><td rowspan="1">com.CMD.TestNGcmd</td><td><a href="#m1"><b>Browser</b>  </a></td><td class="numi">1</td><td>1502702172399</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Test &#8212; skipped</th></tr>
-<tr class="skippedodd"><td rowspan="2">com.CMD.TestNGcmd</td><td><a href="#m2"><b>close</b>  </a></td><td class="numi">1</td><td>1502702183834</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m3"><b>run</b>  </a></td><td class="numi">1</td><td>1502702183834</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">com.cmd.TestNGcmd</td><td><a href="#m1"><b>run</b>  </a></td><td class="numi">1</td><td>1502714904852</td><td class="numi">3685</td></tr><tr class="failedodd"><td><a href="#m2"><b>close</b>  </a></td><td class="numi">1</td><td>1502714908538</td><td class="numi">2008</td></tr>
 </table>
 <h1>Test</h1>
-<h2 id="m1">com.CMD.TestNGcmd:Browser</h2>
+<h2 id="m1">com.cmd.TestNGcmd:run</h2>
 <div style="padding-left:3em">
-<p>The test with session id 80195eea52b342edadd66953e86a10df has already finished, and can&apos;t receive further commands.
-You can learn more at https://saucelabs.com/jobs/80195eea52b342edadd66953e86a10df
-For help, please check https://wiki.saucelabs.com/display/DOCS/Common+Error+Messages
-Command duration or timeout: 356 milliseconds
+<p>java.net.SocketException: Connection reset
 Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;NIRANJAN&apos;, ip: &apos;192.168.0.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_141&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir2436_8274}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=59.0.3071.86, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=80195eea52b342edadd66953e86a10df, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 80195eea52b342edadd66953e86a10df
-*** Element info: {Using=xpath, value=//*[@id=&apos;username&apos;]}</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:414)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:513)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
-<br/>at com.CMD.TestNGcmd.Browser(TestNGcmd.java:48)
+System info: host: &apos;NIRANJAN&apos;, ip: &apos;192.168.81.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_141&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:368)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:949)
+<br/>at com.cmd.TestNGcmd.run(TestNGcmd.java:57)
+<br/>24 lines not shown
+<p>Caused by Connection reset</p>
+java.net.SocketInputStream.read(Unknown Source)
+<br/>at java.net.SocketInputStream.read(Unknown Source)
+<br/>at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+<br/>at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+<br/>at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+<br/>at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+<br/>at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+<br/>at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+<br/>at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+<br/>at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+<br/>at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+<br/>at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:139)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:87)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:368)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:949)
+<br/>at com.cmd.TestNGcmd.run(TestNGcmd.java:57)
 <br/>24 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.CMD.TestNGcmd:run</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">com.CMD.TestNGcmd:close</h2>
+<h2 id="m2">com.cmd.TestNGcmd:close</h2>
+<div style="padding-left:3em">
+<p>org.apache.http.conn.HttpHostConnectException: Connect to localhost:8869 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NIRANJAN&apos;, ip: &apos;192.168.81.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_141&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:698)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:527)
+<br/>at com.cmd.TestNGcmd.close(TestNGcmd.java:88)
+<br/>24 lines not shown
+<p>Caused by Connect to localhost:8869 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect</p>
+org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:139)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:87)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:698)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:527)
+<br/>at com.cmd.TestNGcmd.close(TestNGcmd.java:88)
+<br/>24 lines not shown
+<p>Caused by Connection refused: connect</p>
+java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+<br/>at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+<br/>at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+<br/>at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+<br/>at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+<br/>at java.net.PlainSocketImpl.connect(Unknown Source)
+<br/>at java.net.SocksSocketImpl.connect(Unknown Source)
+<br/>at java.net.Socket.connect(Unknown Source)
+<br/>at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+<br/>at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:139)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:87)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:698)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:527)
+<br/>at com.cmd.TestNGcmd.close(TestNGcmd.java:88)
+<br/>24 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
