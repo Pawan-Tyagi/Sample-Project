@@ -7,4 +7,4 @@ machine:
 ## Customize test commands
 test:
   override:
-    - sh run.sh
+    - sh execute.sh
