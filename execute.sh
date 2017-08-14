@@ -1,3 +1,9 @@
+rm -rf gen
+
+mkdir gen
+
+javac -d gen -cp "./lib/*" src/com/cmd/*.java 
+
 echo "--------------------------------------------------"
 echo "Current Directory listing"
 echo "--------------------------------------------------"
@@ -13,4 +19,4 @@ echo "--------------------------------------------------"
 echo "Fired the core command"
 echo "--------------------------------------------------"
 
-java -cp ".:./lib/*:./dist/*" org.testng.TestNG testng.xml
+java -cp ".:./lib/*:./gen/" org.testng.TestNG testng.xml
