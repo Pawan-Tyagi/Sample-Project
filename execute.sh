@@ -1,5 +1,16 @@
+echo "--------------------------------------------------"
+echo "Current Directory listing"
+echo "--------------------------------------------------"
+
 ls
+echo "--------------------------------------------------"
+echo "Current Directory Path"
+echo "--------------------------------------------------"
 
 pwd
 
-java -cp ".:Selenium\Concretio\SampleCMD\bin:C:\Selenium\Concretio\SampleCMD\lib\*" org.testng.TestNG testng.xml
+echo "--------------------------------------------------"
+echo "Fired the core command"
+echo "--------------------------------------------------"
+
+java -cp ".:./lib/*:./dist/*" org.testng.TestNG testng.xml
