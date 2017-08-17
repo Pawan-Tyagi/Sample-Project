@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test123(failed)">
     <classes>
-      <class name="com.cmd.TestNGcmd">
+      <class name="com.testcases.CreateAccount">
         <methods>
-          <include name="run"/>
-          <include name="Browser"/>
-          <include name="close"/>
+          <include name="afterMethod"/>
+          <include name="testng"/>
         </methods>
-      </class> <!-- com.cmd.TestNGcmd -->
+      </class> <!-- com.testcases.CreateAccount -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test123(failed) -->
 </suite> <!-- Failed suite [Suite] -->
