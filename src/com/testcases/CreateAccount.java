@@ -60,7 +60,7 @@ public class CreateAccount {
 				By.xpath("//*[@id='hotlist']/table/tbody/tr/td[2]/input"))
 				.click();
 		driver.findElement(By.xpath("//*[@id='acc2']")).sendKeys(
-				"Automated Account 105");
+				"Automated Account 106");
 		driver.findElement(By.xpath("//*[@id='topButtonRow']/input[1]"))
 				.click();
 		driver.findElement(By.xpath("//*[@id='topButtonRow']/input[6]"))
@@ -111,7 +111,7 @@ public class CreateAccount {
 						By.xpath("//*[@id='gwt-debug-companyDetails-header']/table/tbody/tr/td[2]/div[2]/span/strong"))
 				.getText();
 		// verifying the result
-		assertEquals(str, "Automated Account 105");
+		assertEquals(str, "Automated Account 106");
 		// ITestResult result = Reporter.getCurrentTestResult();
 
 	}
