@@ -50,22 +50,22 @@ public class CreateAccount {
 
 		Thread.sleep(10000);
 		driver.findElement(By.xpath("//*[@id='AllTab_Tab']/a/img")).click();
-		// Thread.sleep(2000);
+		Thread.sleep(2000);
 		driver.findElement(
 				By.xpath("//*[@id='bodyCell']/div[3]/div[2]/table/tbody/tr[1]/td[1]/a"))
 				.click();
-		// Thread.sleep(3000);
+	    Thread.sleep(3000);
 
 		driver.findElement(
 				By.xpath("//*[@id='hotlist']/table/tbody/tr/td[2]/input"))
 				.click();
 		driver.findElement(By.xpath("//*[@id='acc2']")).sendKeys(
-				"Automated Account 106");
+				"Automated Account 107");
 		driver.findElement(By.xpath("//*[@id='topButtonRow']/input[1]"))
 				.click();
 		driver.findElement(By.xpath("//*[@id='topButtonRow']/input[6]"))
 				.click();
-		// Thread.sleep(3000);
+		 Thread.sleep(3000);
 
 		Alert alert = driver.switchTo().alert();
 		alert.accept();
@@ -111,7 +111,7 @@ public class CreateAccount {
 						By.xpath("//*[@id='gwt-debug-companyDetails-header']/table/tbody/tr/td[2]/div[2]/span/strong"))
 				.getText();
 		// verifying the result
-		assertEquals(str, "Automated Account 106");
+		assertEquals(str, "Automated Account 107");
 		// ITestResult result = Reporter.getCurrentTestResult();
 
 	}
